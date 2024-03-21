@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.smooth{@apply transition-all duration-200 ease-in-out;}
+.shape-fill{fill: #FFFFFF;}
