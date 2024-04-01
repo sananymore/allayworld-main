@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./styles/style.css" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="./images/favicon.png">
-    <title>ЭW4 - Перезапуск сервера</title>
+    <title>ЭW4 - В разработке</title>
 </head>
-<body class="bg-zinc-900 dark:bg-zinc-100">
+<body class="bg-zinc-900 dark:bg-zinc-100 overflow-hidden">
 
-    <div id="navbar" class="w-full lg:w-1/2 flex items-center justify-around lg:justify-between mx-auto mt-2">
+    <div id="navbar" class="w-full lg:w-1/2 flex items-center justify-around md:justify-between mx-auto mt-2 z-50">
         <!-- Лого -->
         <button title="Главная" onclick="window.location.href='./'" class="bg-center bg-cover w-12 h-12 hover:bg-white/5 rounded-full transition-all duration-150 ease-in-out">
             <span class="fas fa-star transform -rotate-12 text-3xl text-white dark:text-black"></span>
@@ -19,12 +19,12 @@
         <!-- Кнопки -->
         <div class="flex">
             <!-- Главная -->
-            <button title="Главная" class="text-white dark:text-black w-8 h-8 bg-white/5 dark:bg-black/5 rounded-full cursor-default">
+            <button title="Главная" onclick="window.location.href='./'" class="text-white dark:text-black w-8 h-8 hover:bg-white/5 dark:hover:bg-black/5 dark:bg-black/5 rounded-full transition-all duration-150 ease-in-out">
                 <span class="fas fa-home"></span>
             </button>
 
             <!-- Wiki -->
-            <button title="Wiki" onclick="window.location.href='./wiki.html'" class="ml-1 text-white dark:text-black w-8 h-8 hover:bg-white/5 dark:hover:bg-black/5 rounded-full transition-all duration-150 ease-in-out">
+            <button title="Wiki" class="ml-1 text-white dark:text-black w-8 h-8 bg-white/5 rounded-full cursor-default">
                 <span class="fas fa-book"></span>
             </button>
 
@@ -73,46 +73,21 @@
         </div>
     </div>
 
-    <div class="w-full lg:w-2/3 mx-auto mt-24">
-        <!-- Начало -->
-        <div class="block lg:flex items-center justify-between lg:p-0 lg:w-3/4 mx-auto">
-            <div class="block lg:w-1/2">
-                <h1 class="text-3xl lg:text-5xl font-black text-blue-400 text-center uppercase px-4">ЭллейWorld4</h1>
-                <h2 class="text-lg font-bold text-white dark:text-black text-center uppercase font-mono px-4">Перезапуск сервера</h2>
-                <div class="flex lg:w-3/4 mx-auto mt-2 justify-center space-x-2 px-4">
-                    <!-- Играть -->
-                    <button title="Играть" onclick="window.location.href='./discord.html'" class="ml-1 text-white dark:text-black px-4 h-8 hover:bg-white/5 dark:hover:bg-black/5 rounded-full transition-all duration-150 ease-in-out flex items-center space-x-2">
-                        <span class="fas fa-play"></span>
-                        <span class="font-bold">Играть</span>
-                    </button>
-
-                    <!-- Копировать IP -->
-                    <button title="Копировать IP" onclick="copyIP()" class="ml-1 text-white dark:text-black px-4 h-8 hover:bg-white/5 dark:hover:bg-black/5 rounded-full transition-all duration-150 ease-in-out flex items-center space-x-2">
-                        <span class="fas fa-copy"></span>
-                        <span class="font-bold">Копировать IP</span>
-                    </button>
-                </div>
-            </div>
-            <div class="w-full lg:w-96 h-36 bg-cover bg-center lg:rounded-3xl drop-shadow-xl mx-auto mt-8 lg:mt-0" style="background-image: url(./images/index.png);"></div>
-        </div>
-
-        <!-- Описание -->
-        <div class="w-full lg:w-3/4 mx-auto mt-24 mb-24 block lg:flex lg:space-x-4">
-            <div class="lg:w-1/2 bg-bottom bg-contain bg-no-repeat p-8 lg:p-20 lg:rounded-3xl bg-zinc-800 dark:bg-white text-white dark:text-black drop-shadow-xl" style="background-image: url(./images/opening1.png);">
-                <h1 class="text-3xl text-emerald-400 font-bold mb-6 uppercase text-center">Открытие сервера</h1>
-                <p class="font-medium mb-4">Приглашаем вас зайти на открытие сервера!</p>
-                <p class="font-medium mb-48">Мы проведём его<strong class="mx-1">5 апреля в 16:00</strong>по московскому времени, присутствующим выдадим бонусный баланс на сайте для покупок эффектов, префиксов, и других вещей!</p>
-            </div>
-            <div class="mt-8 lg:mt-0 lg:w-1/2 bg-bottom bg-contain bg-no-repeat p-8 lg:p-20 lg:rounded-3xl bg-zinc-800 dark:bg-white text-white dark:text-black drop-shadow-xl" style="background-image: url(./images/opening2.png);">
-                <h1 class="text-3xl text-purple-500 font-bold mb-6 uppercase text-center">ЭW ФАНТАЗИЯ</h1>
-                <p class="font-medium mb-4">Мы начали подгатавливать для всех вас просто<strong class="ml-1">фантастический</strong>, новый сервер!</p>
-                <p class="font-medium mb-48">Не говорим о сроках, и храним молчание, чтобы вам было интереснее гадать: "Что это может быть за сервер?"<br>Оповестим за неделю до открытия этого сервера!</p>
+    <div class="w-full mx-auto h-screen items-center justify-center flex">
+        <div class="-mt-16">
+            <h1 class="text-6xl text-white dark:text-black font-black uppercase text-center">В разработке!</h1>
+            <p class="mt-2 text-white dark:text-black font-medium text-center">Приносим свои извинения за неудобства!</p>
+            <div class="flex items-center justify-center">
+                <button title="Играть" onclick="window.location.href='./'" class="mt-4 text-white dark:text-black px-4 h-8 bg-white/5 hover:bg-white/10 dark:bg-black/5 dark:hover:bg-black/10 rounded-full transition-all duration-150 ease-in-out flex items-center space-x-2">
+                    <span class="fas fa-home"></span>
+                    <span class="font-bold">На главную</span>
+                </button>
             </div>
         </div>
+        
     </div>
 
     <script src="./scripts/themeToggler.min.js"></script>
-    <script src="./scripts/copyServerIP.min.js"></script>
 
 </body>
 </html>
