@@ -7,149 +7,160 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv="pragma" content="no-cache">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./styles/style.css?v=1.1.4" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="./styles/style.css?v=1.2" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <title>ЭW4 - Перезапуск сервера</title>
 </head>
-<body class="bg-zinc-900 dark:bg-zinc-100 transition-all duration-300 ease-in-out select-none">
+<body class="bg-zinc-800 dark:bg-zinc-100 transition-all duration-300 ease-in-out select-none">
 
-    <div id="navbar" class="w-full lg:w-1/2 flex items-center justify-around lg:justify-between mx-auto mt-2">
-        <!-- Лого -->
-        <button title="Главная" class="bg-center bg-cover w-12 h-12 rounded-full transition-all duration-150 ease-in-out cursor-default">
-            <span class="fas fa-star transform -rotate-12 text-3xl text-white dark:text-black"></span>
+    <div id="navbar" class="xl:w-1/2 flex items-center px-4 xl:px-0 justify-between mx-auto mt-4 mb-12 xl:mb-24">
+        
+        <!-- FAVICON AND VERSION -->
+        <div class="flex items-center space-x-4">
+
+            <!-- FAVICON -->
+            <button title="Главная" onclick="window.location.href='./'" class="flex items-center px-3 py-1 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out space-x-3">
+                <span class="fas fa-star text-xl -rotate-12 text-blue-500"></span>
+                <h1 class="font-bold text-lg text-blue-500">ЭW4</h1>
+            </button>
+
+            <!-- UPDATES -->
+            <button title="Обновления сайта" onclick="window.location.href='./updates.html'" class="px-3 py-0.5 bg-white/5 dark:bg-black/5 hover:bg-white/10 hover:dark:bg-black/10 cursor-pointer text-sm font-mono text-zinc-100 dark:text-zinc-800 rounded transition-all duration-200 ease-in-out">
+                v1.2
+            </button>
+        </div>
+
+        <!-- MENU -->
+        <button title="Меню" onclick="window.location.href='./'" class="block xl:hidden w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
+            <span class="fas fa-bars text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
         </button>
 
-        <!-- Кнопки -->
-        <div class="flex">
-            <!-- Главная -->
-            <button title="Главная" class="text-white dark:text-black w-8 h-8 bg-white/5 dark:bg-black/5 rounded-full cursor-default transition-all duration-150 ease-in-out">
-                <span class="fas fa-home"></span>
+        <!-- BUTTONS -->
+        <div class="hidden xl:flex items-center">
+            
+            <!-- INDEX -->
+            <button title="Главная" onclick="window.location.href='./'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
+                <span class="fas fa-home text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+            </button>
+            
+            <!-- WIKI -->
+            <button title="Википедия" onclick="window.location.href='./wiki/start.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
+                <span class="fas fa-book text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
             </button>
 
-            <!-- Wiki -->
-            <button title="Wiki" onclick="window.location.href='./wiki.html'" class="ml-1 text-white dark:text-black w-8 h-8 hover:bg-white/5 dark:hover:bg-black/5 rounded-full transition-all duration-150 ease-in-out">
-                <span class="fas fa-book"></span>
+            <!-- SHOP -->
+            <button title="Магазин" onclick="window.location.href='./shop.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
+                <span class="fas fa-shopping-cart text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
             </button>
 
-            <!-- Правила -->
-            <button title="Правила" onclick="window.location.href='./wiki/rules.html'" class="ml-1 text-white dark:text-black w-8 h-8 hover:bg-white/5 dark:hover:bg-black/5 rounded-full transition-all duration-150 ease-in-out">
-                <span class="fas fa-scroll"></span>
+            <!-- DISCORD -->
+            <button title="Discord" onclick="window.location.href='./discord.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
+                <span class="fab fa-discord text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
             </button>
 
-            <!-- Разделитель -->
-            <div class="w-[1px] h-6 bg-white/15 dark:bg-black/15 rounded-full self-center mx-4"></div>
-
-            <!-- Дискорд -->
-            <button title="Discord" onclick="window.location.href='./discord.html'" class="text-white dark:text-black w-8 h-8 hover:bg-white/5 dark:hover:bg-black/5 rounded-full transition-all duration-150 ease-in-out">
-                <span class="fab fa-discord"></span>
+            <!-- STUDIO -->
+             <button title="Студия" onclick="window.location.href='./studio.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-4">
+                <span class="fas fa-code text-lg text-blue-500"></span>
             </button>
 
-            <!-- Разделитель -->
-            <div class="w-[1px] h-6 bg-white/15 dark:bg-black/15 rounded-full self-center mx-4"></div>
+            <!-- DIVIDER -->
+            <div class="w-[1px] h-4 bg-white/10 dark:bg-black/10"></div>
 
-            <!-- Тема сайта -->
-            <div class="flex flex-col justify-center items-center">
+            <!-- PROFILE -->
+            <button title="Профиль" onclick="window.location.href='./profile.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out ml-4 mr-1">
+                <span class="fas fa-user text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+            </button>
+
+            <!-- AUTH -->
+            <button title="Авторизация" onclick="window.location.href='./auth.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-4">
+                <span class="fas fa-right-to-bracket text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+            </button>
+
+            <!-- DIVIDER -->
+            <div class="w-[1px] h-5 bg-white/10 dark:bg-black/10"></div>
+
+            <!-- THEME TOGGLER -->
+            <div class="flex flex-col justify-center items-center ml-4">
                 <div class="flex justify-center items-center">
-                    <span>
-                        <svg class="h-5 w-5 text-blue-400 dark:text-black transition-all duration-150 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                        </svg>
-                    </span>
-                    <div id="toggleSwitch" class="w-10 h-5 flex items-center bg-white dark:bg-black rounded-full mx-3 px-1" onclick="toggleTheme()">
+                    <span class="fas fa-lightbulb text-lg text-zinc-700 dark:text-orange-400 transition-all duration-200 ease-in-out"></span>
+                    <div id="toggleSwitch" onclick="toggleTheme()" class="w-10 h-5 flex items-center bg-white dark:bg-black rounded-full mx-3 px-1">
                         <div id="toggleButton" class="bg-blue-400 w-3 h-3 rounded-full shadow-md transform transition-transform duration-300"></div>
                     </div>
-                    <span>
-                        <svg class="h-5 w-5 text-blue-400 dark:text-black transition-all duration-150 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                        </svg>
-                    </span>
+                    <span class="fas fa-moon text-lg text-zinc-100 dark:text-zinc-300 transition-all duration-200 ease-in-out"></span>
                 </div>
-            </div>
-
-            <!-- Разделитель -->
-            <div class="w-[1px] h-6 bg-white/15 dark:bg-black/15 rounded-full self-center mx-4"></div>
-
-            <!-- Кнопка входа -->
-            <button title="Авторизация" onclick="window.location.href='./auth.html'" class="text-white dark:text-black w-8 h-8 hover:bg-white/5 dark:hover:bg-black/5 rounded-full transition-all duration-150 ease-in-out">
-                <span class="fas fa-right-to-bracket"></span>
-            </button>
-        </div>
-    </div>
-
-    <div class="w-full lg:w-2/3 mx-auto mt-24">
-        <!-- Начало -->
-        <div class="block lg:flex items-center justify-between lg:p-0 lg:w-3/4 mx-auto">
-            <div class="block lg:w-1/2">
-                <h1 class="text-3xl lg:text-5xl font-black text-blue-400 uppercase px-4">ЭллейWorld4</h1>
-                <h2 class="lg:mt-2 text-sm lg:text-lg font-bold text-white dark:text-black uppercase font-mono px-4 transition-all duration-150 ease-in-out">Перезапуск сервера</h2>
-                <div class="flex mt-3 space-x-2 px-4 lg:w-2/3">
-                    <!-- Начать игру -->
-                    <button title="Начать игру" onclick="window.location.href='./discord.html'" class="w-1/2 text-sm font-bold text-white dark:text-black py-2 bg-white/5 dark:bg-black/5 hover:bg-white/10 dark:hover:bg-black/10 transition-all duration-150 ease-in-out rounded-xl">
-                        <span class="fas fa-play mr-2"></span>
-                        Играть
-                    </button>
-
-                    <!-- Копировать IP -->
-                    <button title="Копировать IP" onclick="copyIP()" class="w-1/2 text-sm font-bold text-white dark:text-black py-2 bg-white/5 dark:bg-black/5 hover:bg-white/10 dark:hover:bg-black/10 transition-all duration-150 ease-in-out rounded-xl">
-                        <span class="fas fa-clone mr-2"></span>
-                        Копиров. IP
-                    </button>
-                </div>
-            </div>
-            <div class="w-full lg:w-1/2 h-48 bg-cover bg-center lg:rounded-3xl drop-shadow-xl mx-auto mt-8 lg:mt-0" style="background-image: url(./images/index.png);"></div>
-        </div>
-
-        <!-- Описание -->
-        <div class="w-full lg:w-3/4 mx-auto mt-24 block lg:flex lg:space-x-4">
-            <div class="lg:w-1/2 bg-bottom bg-contain bg-no-repeat p-8 lg:p-20 lg:rounded-3xl bg-zinc-800 dark:bg-white text-white dark:text-black drop-shadow-xl transition-all duration-300 ease-in-out" style="background-image: url(./images/opening1.png);">
-                <h1 class="text-xl lg:text-3xl text-emerald-400 font-bold mb-6 uppercase text-center">Открытие сервера</h1>
-                <p class="text-sm lg:text-base font-medium mb-4">Приглашаем вас зайти на открытие сервера!</p>
-                <p class="text-sm lg:text-base font-medium mb-48">Мы проведём его<strong class="mx-1">5 апреля в 16:00</strong>по московскому времени, присутствующим выдадим бонусный баланс на сайте для покупок эффектов, префиксов, и других вещей!</p>
-            </div>
-            <div class="mt-4 lg:mt-0 lg:w-1/2 bg-bottom bg-contain bg-no-repeat p-8 lg:p-20 lg:rounded-3xl bg-zinc-800 dark:bg-white text-white dark:text-black drop-shadow-xl transition-all duration-300 ease-in-out" style="background-image: url(./images/opening2.png);">
-                <h1 class="text-xl lg:text-3xl text-purple-500 font-bold mb-6 uppercase text-center">ЭW ФАНТАЗИЯ</h1>
-                <p class="text-sm lg:text-base font-medium mb-4">Мы начали подгатавливать для всех вас просто<strong class="ml-1">фантастический</strong>, новый сервер!</p>
-                <p class="text-sm lg:text-base font-medium mb-48">Не говорим о сроках, и храним молчание, чтобы вам было интереснее гадать: "Что это может быть за сервер?"<br>Оповестим за неделю до открытия этого сервера!</p>
-            </div>
-        </div>
-
-        <div class="mt-4 lg:w-3/4 mx-auto bg-bottom bg-contain bg-no-repeat p-8 lg:p-20 lg:rounded-3xl bg-zinc-800 dark:bg-white text-white dark:text-black drop-shadow-xl transition-all duration-300 ease-in-out" style="background-image: url(./images/opening3.png);">
-            <h1 class="text-xl lg:text-3xl text-green-500 font-bold mb-6 uppercase text-center">CHILL</h1>
-            <p class="text-sm lg:text-base font-medium mb-4 lg:w-1/2 lg:mx-auto">Заходи играть к нам! У нас действительно чиллово, можно отдохнуть после тяжёлого дня!</p>
-            <p class="text-sm lg:text-base font-medium mb-56 lg:w-1/2 lg:mx-auto">Мы, как админы - очень стараемся следить за нарушителями, и избавлять нормальных игроков от них, чтобы играть было комфортно!</p>
-        </div>
-
-        <div class="mt-4 mb-24 lg:w-3/4 mx-auto bg-bottom bg-contain bg-no-repeat p-8 lg:p-20 lg:rounded-3xl bg-zinc-800 dark:bg-white text-white dark:text-black drop-shadow-xl transition-all duration-300 ease-in-out" style="background-image: url(./images/opening4.png);">
-            <h1 class="text-xl lg:text-3xl text-red-500 font-bold mb-6 uppercase text-center">Студия</h1>
-            <p class="text-sm lg:text-base font-medium mb-4 lg:w-1/2 lg:mx-auto">Встречайте - SURRIST Studio! За небольшые суммы, делаем вам достойные коды!</p>
-            <p class="text-sm lg:text-base font-medium mb-4 lg:w-1/2 lg:mx-auto">Discord.js / Discord.py / Py / JS / Java и многие другие языки программирования, на которых мы пишем! Заходи на страницу студии и ознакамливайся с прайс-листом!</p>
-            <div class="flex items-center justify-center">
-                <button title="На главную" onclick="window.location.href='./studio.html'" class="mt-4 text-sm lg:text-lg font-bold text-white dark:text-black py-2 px-4 bg-white/5 dark:bg-black/5 hover:bg-white/10 dark:hover:bg-black/10 transition-all duration-150 ease-in-out rounded-xl">
-                    <span class="fas fa-code mr-2"></span>
-                    Страница студии
-                </button>
             </div>
         </div>
     </div>
 
+    <div class="xl:w-1/2 xl:mx-auto p-4 xl:p-0">
+        <div class="flex justify-between items-center mb-20 xl:mb-12">
+            <div class="mx-auto xl:mx-0 xl:w-1/2">
+                <h1 class="font-bold text-3xl xl:text-4xl text-blue-500 text-center xl:text-left">ЭЛЛЕЙWORLD4</h1>
+                <p class="font-light text-lg text-zinc-100 dark:text-zinc-800 text-center xl:text-left">ПЕРЕЗАПУСК СЕРВЕРА</p>
+                <div class="flex space-x-2 mt-2 justify-center xl:justify-start">
+
+                    <!-- PLAY -->
+                    <button title="Играть" onclick="window.location.href='./wiki/play.html'" class="flex items-center justify-center space-x-1 w-1/2 xl:w-1/4 py-1.5 bg-white/5 dark:bg-black/5 hover:bg-white/10 dark:hover:bg-black/10 text-zinc-100 dark:text-zinc-800 rounded-xl transition-all duration-200 ease-in-out">
+                        <span class="fas fa-play text-lg mr-1.5"></span>
+                        <p class="font-medium">Играть</p>
+                    </button>
+
+                    <!-- HOWTO -->
+                    <button title="Получение доступа" onclick="window.location.href='./wiki/whitelist.html'" class="flex items-center justify-center space-x-2 w-1/2 xl:w-1/4 py-1.5 bg-white/5 dark:bg-black/5 hover:bg-white/10 dark:hover:bg-black/10 text-zinc-100 dark:text-zinc-800 rounded-xl transition-all duration-200 ease-in-out">
+                        <span class="fas fa-scroll text-lg"></span>
+                        <p class="font-medium">Whitelist</p>
+                    </button>
+                </div>
+                
+            </div>
+            <div class="hidden xl:flex w-1/2 h-48 bg-cover bg-no-repeat rounded-3xl border border-white/5 dark:border-black/10" style="background-image: url(./images/index.png);"></div>
+        </div>
+
+        <div class="block xl:flex xl:justify-between xl:items-stretch space-y-4 space-x-0 xl:space-y-0 xl:space-x-4">
+
+            <!-- REVAMP -->
+            <div class="border border-white/5 dark:border-black/10 w-full xl:w-1/2 bg-white/5 dark:bg-white px-8 pt-8 rounded-xl bg-contain bg-bottom bg-no-repeat" style="background-image: url(./images/opening1.png);">
+                <div class="flex items-center">
+                    <span class="fas fa-rotate text-blue-500 text-xl mr-2"></span>
+                    <h1 class="text-xl font-bold text-blue-500">Переоткрытие</h1>
+                </div>
+                
+                <div class="mt-2">
+                    <p class="text-sm xl:text-base font-light text-zinc-100 dark:text-zinc-800">Мы решили переоткрыть 4 сезон сервера ЭЛЛЕЙWORLD в связи с частыми перебоями в работе предыдущего хостинга, и конфликтами с их владельцами!</p>
+                    <p class="text-sm xl:text-base font-light text-zinc-100 dark:text-zinc-800 mt-2">Так-же, помимо этого у нас были проблемы с администрацией, которая часто конфликтовала с игроками. Этой администрации больше нету, как и таких проблем.</p>
+                    <p class="text-sm xl:text-base font-light text-zinc-100 dark:text-zinc-800 mt-4 mb-48 md:mb-96 xl:mb-64">Спасибо что остаётесь с нами!</p>
+                </div>
+            </div>
+
+            <!-- STUDIO -->
+            <div class="border border-white/5 dark:border-black/10 w-full xl:w-1/2 bg-white/5 dark:bg-white px-8 pt-8 rounded-xl bg-contain bg-bottom bg-no-repeat" style="background-image: url(./images/opening2.png);">
+                <div class="flex items-center">
+                    <span class="fas fa-code text-blue-500 text-xl mr-2"></span>
+                    <h1 class="text-xl font-bold text-blue-500">Студия</h1>
+                </div>
+                <div class="mt-2">
+                    <p class="text-sm xl:text-base font-light text-zinc-100 dark:text-zinc-800">Делем дискорд ботов, сайты, и даже кастомые плагины<strong class="ml-1">за вас</strong>, и по<strong class="ml-1">скромным ценам</strong>. Вы даёте ясное задание и оплачиваете - мы выполняем работу, и отдаём проект с кодом вам.</p>
+                    <p class="text-sm xl:text-base font-light text-zinc-100 dark:text-zinc-800 mt-2">Мы стараемся набрать репутацию, поэтому на старте нам нужны будут отзывы. После покупки, обязательно оставьте отзыв или оценку для других, что-бы они убедились в честности!</p>
+                    <p class="text-sm xl:text-base font-light text-zinc-100 dark:text-zinc-800 mt-4 mb-48 md:mb-96 xl:mb-64">Вся информация по ценам на странице студии!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-1/2 mx-auto flex justify-around items-center p-4 border-t border-x border-white/5 dark:border-black/10 mt-24 rounded-t-xl bg-white/5 dark:bg-white">
+        <div class="block w-1/3 mx-auto">
+            <p class="text-sm font-light text-zinc-100 dark:text-zinc-800 text-center">Сделано с любовью, и под вкусным чаем!</p>
+            <p class="text-sm font-medium text-zinc-100 dark:text-zinc-800 text-center mt-1">© 2024 А. И. Буц</p>
+        </div>
+        <div class="w-[1px] h-12 bg-white/10 dark:bg-black/10"></div>
+        <div class="block w-1/3 mx-auto space-y-1">
+            <a class="text-xs font-medium text-zinc-100 dark:text-zinc-800 block decoration-zinc-100 dark:decoration-zinc-800 underline underline-offset-2" href="./discord.html">Связь с администрацией сайта</a>
+            <a class="text-xs font-medium text-zinc-100 dark:text-zinc-800 block decoration-zinc-100 dark:decoration-zinc-800 underline underline-offset-2" href="./studio.html">Наша студия по разработке кодов</a>
+            <a class="text-xs font-medium text-zinc-100 dark:text-zinc-800 block decoration-zinc-100 dark:decoration-zinc-800 underline underline-offset-2" href="./support.html">Поддержать наш сервер донатом</a>
+        </div>
+    </div>
     
-    <div class="w-full lg:w-1/2 lg:mx-auto flex justify-center items-center py-8 border-t border-x rounded-t-3xl border-white/5 dark:border-black/5">
-        <div class="mt-2 w-1/2">
-            <h1 class="font-bold text-neutral-300 dark:text-neutral-600 w-1/2 mx-auto">Сделано с любовью<span class="fas fa-heart text-red-500 ml-2"></span></h1>
-            <h1 class="font-bold text-neutral-300 dark:text-neutral-600 w-1/2 mx-auto">игроком sananymore!</span></h1>
-            <h1 class="font-bold text-neutral-300 dark:text-neutral-600 w-1/2 mx-auto mt-2">© Буц А. И. 2024</h1>
-        </div>
-        <div class="space-y-2 mt-2 w-1/2">
-            <div class="w-1/2 mx-auto block">
-                <h1 class="font-bold text-neutral-300 dark:text-neutral-600">Ссылки</h1>
-                <div class="w-full h-[1px] bg-white/15 dark:bg-black/15 rounded-full mt-1 mb-2"></div>
-                <a class="block text-neutral-300 hover:text-blue-400 dark:text-neutral-600 font-mono font-bold text-sm transition-all duration-150 ease-in-out" href="https://dynmap.allayworld.fun/">Карта сервера</a>
-                <a class="mt-0.5 block text-neutral-300 hover:text-blue-400 dark:text-neutral-600 font-mono font-bold text-sm transition-all duration-150 ease-in-out" href="https://vk.allayworld.fun/">Группа ВК сервера</a>
-                <a class="mt-0.5 block text-neutral-300 hover:text-blue-400 dark:text-neutral-600 font-mono font-bold text-sm transition-all duration-150 ease-in-out" href="https://tgk.allayworld.fun/">ТГК сервера</a>            
-            </div>
-        </div>
-    </div>
-
     <script src="./scripts/themeToggler.min.js"></script>
     <script src="./scripts/copyServerIP.min.js"></script>
 
