@@ -3,6 +3,6 @@
     "tailwindcss": "^3.4.3"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./main/assets/style/tailwind.css -o ./main/assets/style/main.min.css --watch --minify"
+    "dev": "npx tailwindcss -i ./main/assets/css/tailwind.css -o ./main/assets/css/main.min.css --watch --minify"
   }
 }
