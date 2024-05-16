@@ -1,117 +1,204 @@
+<!-- - -->
+<!-- Tailwind CSS используется на этом сайте -->
+<!-- Tailwind CSS by Adam Wathan, Jonathan Reinink, David Hemphill, and Steve Schoger -->
+<!-- Лицензировано по лицензии MIT -->
+<!-- Подробнее: https://github.com/tailwindlabs/tailwindcss -->
+<!-- - -->
+<!-- Шрифт Montserrat используется на этом сайте -->
+<!-- Montserrat Font by The Montserrat Project Authors -->
+<!-- Лицензировано по лицензии SIL Open Font License, Version 1.1 -->
+<!-- Подробнее: https://github.com/JulietaUla/Montserrat -->
+<!-- - -->
+<!-- FontAwesome используется на этом сайте -->
+<!-- FontAwesome Icons by Font Awesome -->
+<!-- Лицензировано по лицензии Font Awesome Free License -->
+<!-- Подробнее: https://fontawesome.com/license/free -->
+<!-- - -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5; url=https://discord.com/invite/7znjxaTSzJ">
-    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="pragma" content="no-cache">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="./styles/style.css?v=1.2.1" rel="stylesheet"/>
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-    <title>ЭW4 - Discord</title>
+    <meta name="theme-color" content="#3D7DE0">
+    <meta http-equiv="refresh" content="3; URL=http://discord.allayworld.fun/">
+    <title>ЭллейWorld - Discord</title>
+    <meta name="description" content="Залетай на открытие нового сезона твоего любимого, ванильного Minecraft сервера!">
+    <meta property="og:url" content="http://n4.senterium.xyz:25155/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ЭллейWorld - Discord">
+    <meta property="og:description" content="Залетай на открытие нового сезона твоего любимого, ванильного Minecraft сервера!">
+    <meta property="og:image" content="./assets/images/opengraph.png">
+    <meta property="twitter:domain" content="n4.senterium.xyz">
+    <meta property="twitter:url" content="http://n4.senterium.xyz:25155/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ЭллейWorld - Discord">
+    <meta name="twitter:description" content="Залетай на открытие нового сезона твоего любимого, ванильного Minecraft сервера!">
+    <meta name="twitter:image" content="./assets/images/opengraph.png">
+    <link rel="stylesheet" href="./assets/style/main.min.css?v=0.2.1">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-zinc-800 dark:bg-zinc-100 transition-all duration-300 ease-in-out select-none">
+<body class="bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 select-none scroll-smooth overflow-x-hidden transition-all duration-150 ease-in-out">
+    
+    <div id="navbar" class="z-10 fixed top-0 left-0 w-screen hidden xs:w-4/5 xs:transform xs:-translate-x-1/2 xs:left-1/2 md:w-3/4 lg:w-2/3 md:flex items-center justify-center md:justify-between bg-neutral-100 dark:bg-neutral-900 p-2 rounded-none xs: rounded-b-3xl transition-all duration-150 ease-in-out">
+        <button title="На главную страницу" onclick="window.location.href = './';" type="button" class="w-24 h-12 flex items-center justify-center rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+            <div class="w-12 h-12 bg-cover bg-center bg-no-repeat" style="background-image: url(./assets/images/favicon-transparent.png);"></div>
+            <span class="w-12 font-bold text-lg">ЭW</span>
+        </button>
 
-    <div id="navbar" class="xl:w-1/2 flex items-center px-4 xl:px-0 justify-between mx-auto mt-4 mb-12 xl:mb-24">
-        
-        <!-- FAVICON AND VERSION -->
-        <div class="flex items-center space-x-4">
-
-            <!-- FAVICON -->
-            <button title="Главная" onclick="window.location.href='./'" class="flex items-center px-3 py-1 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out space-x-3">
-                <span class="fas fa-star text-xl -rotate-12 text-blue-500"></span>
-                <h1 class="font-bold text-lg text-blue-500">ЭW4</h1>
+        <div class="flex items-center">
+            <button title="На главную страницу" onclick="window.location.href = './';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-home mt-1"></span>
             </button>
-
-            <!-- UPDATES -->
-            <button title="Обновления сайта" onclick="window.location.href='./updates.html'" class="px-3 py-0.5 bg-white/5 dark:bg-black/5 hover:bg-white/10 hover:dark:bg-black/10 cursor-pointer text-sm font-mono text-zinc-100 dark:text-zinc-800 rounded transition-all duration-200 ease-in-out">
-                v1.2.1
+            <button title="На страницу магазина" onclick="window.location.href = './store.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-store mt-1"></span>
+            </button>
+            <button title="На страницу википедии" onclick="window.location.href = './wiki/start.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-book mt-1"></span>
+            </button>
+            <button title="На страницу правил" onclick="window.location.href = './wiki/rules.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-scroll mt-1"></span>
+            </button>
+            <button title="В наш Discord сервер" onclick="window.location.href = './discord.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fab fa-discord mt-1"></span>
+            </button>
+            <button id="button-other" title="Другие кнопки" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-ellipsis-vertical mt-1"></span>
             </button>
         </div>
 
-        <!-- MENU -->
-        <button title="Меню" onclick="window.location.href='./'" class="block xl:hidden w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
-            <span class="fas fa-bars text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+        <div id="otherDropdown" class="hidden absolute top-full right-0 mt-2 w-48 bg-neutral-100 dark:bg-neutral-900 rounded-[1.8rem] p-2 z-10 space-y-1">
+            <button id="button-hosting" title="На сайт хостинга" onclick="window.open('https://senterium.xyz/', '_blank');" type="button" class="w-full h-12 flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <div class="w-3/4 flex items-center justify-start space-x-2">
+                    <span class="fas fa-star text-yellow-500 w-6"></span>
+                    <span class="font-bold text-sm text-yellow-500">Хостинг</span>
+                </div>
+            </button>
+            <button title="На страницу обновлений" onclick="window.location.href = './wiki/updates.html';" type="button" class="w-full h-12 flex items-center justify-center space-x-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <div class="w-3/4 flex items-center justify-start space-x-2">
+                    <span class="fas fa-rotate-left w-6"></span>
+                    <span class="font-bold text-sm">Обновления</span>
+                </div>
+            </button>
+            <button id="button-theme" title="Переключить тему сайта" type="button" class="w-full h-12 flex items-center justify-center space-x-2 bg-neutral-800 dark:bg-neutral-100 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-neutral-800 dark:focus-visible:bg-neutral-100 transition-all duration-150 ease-in-out">
+                <div class="w-3/4 flex items-center justify-start space-x-2">
+                    <span class="fas fa-moon w-6 text-neutral-100 dark:text-neutral-800"></span>
+                    <span class="font-bold text-sm text-neutral-100 dark:text-neutral-800">Тема</span>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="topnav-mobile" class="z-10 fixed top-0 left-0 w-screen xs:w-4/5 xs:transform xs:-translate-x-1/2 xs:left-1/2 md:hidden bg-neutral-100 dark:bg-neutral-900 p-2 flex items-center justify-center rounded-none xs:rounded-b-[1.8rem] transition-all duration-150 ease-in-out">
+        <button title="На главную страницу" onclick="window.location.href = './';" type="button" class="w-24 h-12 flex items-center justify-center rounded-2xl hover:bg-black/5 dark:hover:bg-white/5 outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+            <div class="w-12 h-12 bg-cover bg-center bg-no-repeat" style="background-image: url(./assets/images/favicon-transparent.png);"></div>
+            <span class="w-12 font-bold text-lg">ЭW</span>
         </button>
+    </div>
 
-        <!-- BUTTONS -->
-        <div class="hidden xl:flex items-center">
-            
-            <!-- INDEX -->
-            <button title="Главная" onclick="window.location.href='./'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
-                <span class="fas fa-home text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+    <div id="navbar-mobile" class="z-10 fixed bottom-0 w-screen xs:w-4/5 xs:transform xs:-translate-x-1/2 xs:left-1/2 md:hidden flex items-center justify-center bg-neutral-100 dark:bg-neutral-900 p-2 rounded-none xs:rounded-t-[1.8rem] transition-all duration-150 ease-in-out">
+        <div class="flex md:hidden items-center">
+            <button title="На главную страницу" onclick="window.location.href = './';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-home mt-1"></span>
             </button>
-            
-            <!-- WIKI -->
-            <button title="Википедия" onclick="window.location.href='./wiki/start.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
-                <span class="fas fa-book text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+            <button title="На страницу магазина" onclick="window.location.href = './store.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-store mt-1"></span>
             </button>
-
-            <!-- SHOP -->
-            <button title="Магазин" onclick="window.location.href='./shop.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
-                <span class="fas fa-shopping-cart text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+            <button title="На страницу википедии" onclick="window.location.href = './wiki/start.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-book mt-1"></span>
             </button>
-
-            <!-- DISCORD -->
-            <button title="Discord" onclick="window.location.href='./discord.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-1">
-                <span class="fab fa-discord text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+            <button title="На страницу правил" onclick="window.location.href = './wiki/rules.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-scroll mt-1"></span>
             </button>
-
-            <!-- STUDIO -->
-             <button title="Студия" onclick="window.location.href='./studio.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-4">
-                <span class="fas fa-code text-lg text-blue-500"></span>
+            <button title="В наш Discord сервер" onclick="window.location.href = './discord.html';" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fab fa-discord mt-1"></span>
             </button>
-
-            <!-- DIVIDER -->
-            <div class="w-[1px] h-4 bg-white/10 dark:bg-black/10"></div>
-
-            <!-- PROFILE -->
-            <button title="Профиль" onclick="window.location.href='./profile.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out ml-4 mr-1">
-                <span class="fas fa-user text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+            <button id="button-other-mobile" title="Другие кнопки" type="button" class="w-12 h-12 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span class="fas fa-ellipsis-vertical mt-1"></span>
             </button>
+        </div>
 
-            <!-- AUTH -->
-            <button title="Авторизация" onclick="window.location.href='./auth.html'" class="w-10 h-10 hover:bg-white/5 hover:dark:bg-black/5 rounded-full transition-all duration-200 ease-in-out mr-4">
-                <span class="fas fa-right-to-bracket text-lg text-zinc-100 dark:text-zinc-800 transition-all duration-200 ease-in-out"></span>
+        <div id="otherDropdown-mobile" class="hidden absolute bottom-full right-0 mb-2 w-48 bg-neutral-100 dark:bg-neutral-900 rounded-[1.8rem] p-2 z-10 space-y-1">
+            <button title="На сайт хостинга" onclick="window.open('https://senterium.xyz/', '_blank');" type="button" class="w-full h-12 flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <div class="w-3/4 flex items-center justify-start space-x-2">
+                    <span class="fas fa-star text-yellow-500 w-6"></span>
+                    <span class="font-bold text-sm text-yellow-500">Хостинг</span>
+                </div>
             </button>
+            <button title="На страницу обновлений" onclick="window.location.href = './wiki/updates.html';" type="button" class="w-full h-12 flex items-center justify-center space-x-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <div class="w-3/4 flex items-center justify-start space-x-2">
+                    <span class="fas fa-rotate-left w-6"></span>
+                    <span class="font-bold text-sm">Обновления</span>
+                </div>
+            </button>
+            <button id="button-theme-mobile" title="Переключить тему сайта" type="button" class="w-full h-12 flex items-center justify-center space-x-2 bg-neutral-800 dark:bg-neutral-100 rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-neutral-800 dark:focus-visible:bg-neutral-100 transition-all duration-150 ease-in-out">
+                <div class="w-3/4 flex items-center justify-start space-x-2">
+                    <span class="fas fa-moon w-6 text-neutral-100 dark:text-neutral-800"></span>
+                    <span class="font-bold text-sm text-neutral-100 dark:text-neutral-800">Тема</span>
+                </div>
+            </button>
+        </div>
+    </div>
 
-            <!-- DIVIDER -->
-            <div class="w-[1px] h-5 bg-white/10 dark:bg-black/10"></div>
+    <div class="w-screen h-screen flex items-center justify-center">
+        <div class="block md:w-2/3 md:mx-auto px-4 md:px-0">
+            <div class="-z-10 hidden xl:flex absolute left-1/4 -ml-52 -mt-8 w-64 h-64 bg-[#3D7DE0] blur-3xl opacity-30"></div>
+            <div class="block items-center space-y-4 md:space-y-0 md:space-x-4 md:flex md:-ml-[4.5rem]">
+                <div class="w-10 h-10 xs:w-12 xs:h-12 md:w-14 md:h-14 flex items-center justify-center bg-black/5 dark:bg-white/5 rounded-full">
+                    <span class="fas fa-ellipsis text-2xl xs:text-3xl md:text-5xl text-[#3D7DE0]"></span>
+                </div>
+                <h1 class="text-2xl xs:text-3xl md:text-5xl font-bold">Перенаправляем...</h1>
+            </div>
+            <p class="text-xs md:text-sm font-medium text-neutral-400 dark:text-neutral-500 mt-2 mb-4">Подождите пару секунд, или<br>отмените перенаправление!</p>
+            <button title="На главную" onclick="window.location.href = './';" type="button" class="w-32 h-10 md:w-40 md:h-12 flex items-center justify-center space-x-2 bg-black/25 dark:bg-white/5 hover:bg-[#3D7DE0] dark:hover:bg-[#3D7DE0] rounded-full outline-none focus:outline-none focus-visible:outline-offset-0 focus-visible:outline-[#3D7DE0] focus-visible:bg-black/5 dark:focus-visible:bg-white/5 transition-all duration-150 ease-in-out">
+                <span  class="text-xs md:text-sm text-zinc-100 font-medium">На главную</span>
+            </button>
+        </div>
+    </div>
 
-            <!-- THEME TOGGLER -->
-            <div class="flex flex-col justify-center items-center ml-4">
-                <div class="flex justify-center items-center">
-                    <span class="fas fa-lightbulb text-lg text-zinc-700 dark:text-orange-400 transition-all duration-200 ease-in-out"></span>
-                    <div id="toggleSwitch" onclick="toggleTheme()" class="w-10 h-5 flex items-center bg-white dark:bg-black rounded-full mx-3 px-1">
-                        <div id="toggleButton" class="bg-blue-400 w-3 h-3 rounded-full shadow-md transform transition-transform duration-300"></div>
-                    </div>
-                    <span class="fas fa-moon text-lg text-zinc-100 dark:text-zinc-300 transition-all duration-200 ease-in-out"></span>
+    <div class="mt-48 w-screen py-8">
+        <div class="px-4 xl:px-0 xl:w-3/4 mx-auto xl:flex items-start justify-between">
+            <div class="xl:w-1/3">
+                <span class="flex items-center justify-start rounded-2xl transition-all duration-150 ease-in-out">
+                    <div class="w-8 h-8 bg-cover bg-center bg-no-repeat" style="background-image: url(./assets/images/favicon-transparent.png);"></div>
+                    <span class="w-8 font-bold text-xs">ЭW</span>
+                </span>
+                <p class="text-xs font-bold tracking-wide mt-4">Copyright<span class="fas fa-copyright mx-2"></span>2024 ИП Буц А.И.</p>
+                <p class="text-xs font-medium tracking-wider mt-4">ЭЛЛЕЙWORLD является независимым проектом и не имеет отношения к Mojang AB или их продуктам. Любые товарные знаки, зарегистрированные товарные знаки, логотипы, названия продуктов и компаний, упомянутые на сайте, принадлежат соответствующим владельцам.</p>
+                <p class="text-xs font-medium tracking-wider mt-4">Все средства, полученные от донатов или иных источников нашего сервера Minecraft, направляются на совершенствование и поддержание проекта. Мы стремимся соблюдать политики Mojang AB и уважаем других пользователей и их права. Если у вас возникли вопросы или замечания, связанные с нашим проектом, пожалуйста, обращайтесь к нам.</p>
+            </div>
+            <div class="w-2/3 xl:flex space-y-11 pb-20 xl:pb-0 xl:space-y-0 items-start justify-around mt-11">
+                <div>
+                    <p class="text-sm font-semibold">Карта сайта</h3>
+                    <ul class="list-disc list-inside text-xs mt-6 space-y-2">
+                        <li><a href="./">Главная страница</a></li>
+                        <li><a href="./store.html">Магазин</a></li>
+                        <li><a href="./wiki/start.html">Википедия</a></li>
+                        <li><a href="./wiki/rules.html">Правила</a></li>
+                        <li><a href="./discord.html">Discord сервер</a></li>
+                        <li><a href="https://senterium.xyz/">Сайт хостинга</a></li>
+                        <li><a href="./wiki/updates.html">Страница обновлений</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold">Пользователю</h3>
+                    <ul class="list-disc list-inside text-xs mt-6 space-y-2">
+                        <li><a href="./privacy-policy.html">Политика конфиденциальности</a></li>
+                        <li><a href="./user-agreement.html">Пользовательское соглашение</a></li>
+                        <li><a href="./return-policy.html">Политика возврата и возврата средств</a></li>
+                        <li><a href="./contacts.html">Контакты</a></li>
+                        <li><a href="mailto:allayworldfun@gmail.com">allayworldfun@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="w-full mx-auto h-screen items-center justify-center flex -mt-32">
-        <div class="px-4 w-1/3">
-            <h1 class="text-2xl lg:text-6xl text-white dark:text-black font-black flex"><span class="fas fa-pause text-blue-500 w-16 flex items-center justify-start mr-4"></span>Секунду...</h1>
-            <p id="countdown" class="mt-4 text-sm lg:text-lg text-white dark:text-black font-medium">Осталось 5 секунд до автоматического перенаправления на наш Discord сервер!</p>
-            <button title="На главную" onclick="window.location.href='./'" class="mt-4 text-sm lg:text-lg font-bold text-white dark:text-black py-2 px-4 bg-white/5 dark:bg-black/5 hover:bg-white/10 dark:hover:bg-black/10 transition-all duration-150 ease-in-out rounded-xl">
-                <span class="fas fa-chevron-left mr-2"></span>
-                На главную
-            </button>
-            <button title="Перейти в Discord" onclick="window.location.href='https://discord.com/invite/7znjxaTSzJ'" class="ml-1 mt-4 text-sm lg:text-lg font-bold text-white dark:text-black py-2 px-4 bg-white/5 dark:bg-black/5 hover:bg-white/10 dark:hover:bg-black/10 transition-all duration-150 ease-in-out rounded-xl">
-                <span class="fab fa-discord mr-2"></span>
-                Пропустить
-            </button>
-        </div>
-    </div>
-
-    <script src="./scripts/themeToggler.min.js"></script>
-    <script src="./scripts/timeCounter.min.js"></script>
-    <script src="./scripts/rickrollButton.min.js"></script>
-
+    <script src="./assets/scripts/dropdownMobile.min.js"></script>
+    <script src="./assets/scripts/dropdown.min.js"></script>
+    <script src="./assets/scripts/theme.min.js"></script>
+    <script src="./assets/scripts/copy.min.js"></script>
 </body>
 </html>
