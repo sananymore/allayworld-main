@@ -24,7 +24,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/main.min.css">
 </head>
-<body class="bg-neutral-100 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 overflow-x-hidden">
+<body class="bg-neutral-100 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 overflow-x-hidden scroll-smooth">
     <?php include './elements/navbar.html'; ?>
+    <div class="mt-16"></div>
+    <?php
+        $requested_page = isset($_GET['p']) ? $_GET['p'] : 'index';
+        
+        $content_file = './content/' . $requested_page . '.html';
+        
+        if (file_exists($content_file)) {
+            include $content_file;
+        } else {
+            include './content/404.html';
+        }
+    ?>
 </body>
 </html>
