@@ -2,22 +2,24 @@
 module.exports = {
   content: [
     "./main/*.html",
-    "./main/**/*.html",
+    "./main/content/*.html",
     "./main/*.php",
     "./main/**/*.php",
-    "./main/assets/images/*.png",
-    "./main/assets/scripts/*.js",
-    "./main/assets/style/*.css"
+    "./main/assets/img/*.png",
+    "./main/assets/js/*.js",
+    "./main/assets/css/*.css"
   ],
   darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],
-        'mono': ['Noto Sans Mono', 'monospace'],
       },
-      screens: {
-        'xs': '375px',
+      colors: {
+        brand: {
+          1: '#3D7DE0',
+          2: '#B28CE1',
+        },
       },
     },
   },
