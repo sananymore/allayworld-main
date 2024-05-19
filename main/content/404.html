@@ -1,1 +1,20 @@
-<h1>404</h1>
+<div class="absolute -z-10 top-0 left-0 w-screen h-screen flex items-center justify-center">
+    <div class="w-11/12 lg:w-1/2">
+        <div class="flex items-center space-x-4">
+            <span class="text-brand-1 text-base lg:text-2xl font-black w-8 h-8 lg:w-10 lg:h-10 bg-white/5 flex items-center justify-center rounded-full">?</span>
+            <h1 class="text-brand-1 text-2xl lg:text-4xl font-black">Ошибка 404.</h1>
+        </div>
+        <div class="ml-12 lg:ml-14 space-y-4">
+            <p class="text-neutral-500 text-sm font-medium tracking-wide">Запрошенная страница не найдена!</p>
+            <button class="w-32 py-2 hover:bg-white/5 border border-white/5 rounded-full transition-all duration-150 ease-in-out" onclick="goBack()">
+                <span>Назад</span>
+            </button>
+        </div>
+    </div>
+</div>
+<script>
+    // Функция для перехода на предыдущую страницу или на index.php, если информация о предыдущей странице отсутствует
+    function goBack() {
+        window.history.length > 1 ? window.history.back() : window.location.href = "index.php";
+    }
+</script>
