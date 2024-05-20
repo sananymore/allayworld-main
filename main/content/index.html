@@ -1,26 +1,55 @@
-<div class="w-full px-4 md:px-0 md:w-2/3 mx-auto mt-72">
-    <div class="w-full flex flex-row items-center justify-between">
-        <div class="flex flex-col md:w-1/2">
-            <div class="-z-10 absolute w-48 h-48 bg-blue-500 rounded-full blur-3xl opacity-50"></div>
-            <h1 class="text-4xl md:text-5xl text-blue-500 font-black">ЭЛЛЕЙWORLD</h1>
-            <p class="text-sm text-neutral-500 font-medium tracking-wide">Твоя полярная звезда в мире серверов Minecraft!</p>
-            <div class="flex flex-col md:flex-row items-center justify-start mt-4 space-y-1 md:space-y-0 md:space-x-1">
-                <button id="ip" class="w-full md:w-auto px-4 py-2.5 flex items-center justify-center space-x-2.5 bg-blue-500 hover:bg-blue-600 rounded-2xl transition-all duration-150 ease-in-out">
-                    <span class="fas fa-clone text-neutral-100"></span>
-                    <span class="text-sm font-medium tracking-wider text-neutral-100">Копировать IP</span>
-                </button>
-                <button onclick="window.open('https:/\/discord.allayworld.fun/', '_blank')" class="w-full md:w-auto px-4 py-2.5 flex items-center justify-center space-x-2.5 bg-blue-500 hover:bg-blue-600 rounded-2xl transition-all duration-150 ease-in-out">
-                    <span class="fab fa-discord text-neutral-100"></span>
-                    <span class="text-sm font-medium tracking-wider text-neutral-100">Discord</span>
-                </button>
+<!DOCTYPE html>
+<body>
+    <div class="w-full px-4 md:px-0 md:w-2/3 mx-auto mt-72">
+        <div class="w-full flex flex-row items-center justify-between">
+            <div class="flex flex-col md:w-1/2">
+                <div class="-z-10 absolute w-48 h-48 bg-brand-1 rounded-full blur-3xl opacity-50"></div>
+                <h1 class="text-4xl md:text-5xl text-brand-1 font-black">ЭЛЛЕЙWORLD</h1>
+                <p class="text-sm text-neutral-500 font-medium tracking-wide">Твоя полярная звезда в мире серверов Minecraft!</p>
+                <div class="flex flex-col md:flex-row items-center justify-start mt-4 space-y-1 md:space-y-0 md:space-x-1">
+                    <button id="ip" class="w-full md:w-auto px-4 py-2.5 flex items-center justify-center space-x-2.5 bg-brand-1 hover:bg-blue-600 rounded-2xl transition-all duration-150 ease-in-out">
+                        <span class="fas fa-clone text-neutral-100"></span>
+                        <span class="text-sm font-medium tracking-wider text-neutral-100">Копировать IP</span>
+                    </button>
+                    <button onclick="window.open('https:/\/discord.allayworld.fun/', '_blank')" class="w-full md:w-auto px-4 py-2.5 flex items-center justify-center space-x-2.5 bg-brand-1 hover:bg-blue-600 rounded-2xl transition-all duration-150 ease-in-out">
+                        <span class="fab fa-discord text-neutral-100"></span>
+                        <span class="text-sm font-medium tracking-wider text-neutral-100">Discord</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden md:flex w-1/2 h-96 bg-contain bg-right-bottom bg-no-repeat relative" style="background-image: url('./assets/img/pandaster-1.png');">
+                <div class="-z-10 absolute bottom-0 right-20 w-72 h-72 bg-brand-1 rounded-full blur-3xl opacity-50"></div>
             </div>
         </div>
-        <div class="hidden md:flex w-1/2 h-96 bg-contain bg-right-bottom bg-no-repeat relative" style="background-image: url('./assets/img/pandaster-1.png');">
-            <div class="-z-10 absolute bottom-0 right-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl opacity-50"></div>
+        <div class="flex items-center justify-center mt-36 relative">
+            <button onclick="window.location.href = '#about';" class="fas fa-arrow-down text-xl animate-float"></button>
+        </div>
+        <div id="about" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-48 select-none">
+            <div class="bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 p-8 flex items-center justify-center rounded-3xl cursor-pointer hover:transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="w-11/12">
+                    <h1 class="font-bold text-xl mb-4 flex items-center justify-start"><span class="fas fa-info-circle mr-4 flex items-center justify-center"></span>Информация</h1>
+                    <p class="font-medium text-neutral-400 dark:text-neutral-300 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur porro, enim possimus obcaecati magnam labore ipsum eaque iure aspernatur autem minima deleniti saepe sed quidem maxime exercitationem dolore, esse ex!</p>
+                </div>
+            </div>
+            <div class="bg-brand-1 hover:bg-blue-600 p-8 flex items-center justify-center rounded-3xl cursor-pointer hover:transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="w-11/12">
+                    <h1 class="font-bold text-neutral-100 text-xl mb-4 flex items-center justify-start"><span class="fas fa-users mr-4"></span>Игроки</h1>
+                    <p class="font-medium text-neutral-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse similique consequatur, laboriosam hic repellat architecto doloremque numquam distinctio, accusamus pariatur laborum ea sed non rerum necessitatibus sequi, voluptates temporibus at.</p>
+                </div>
+            </div>
+            <div class="bg-brand-2 hover:bg-purple-500 p-8 flex items-center justify-center rounded-3xl cursor-pointer hover:transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="w-11/12">
+                    <h1 class="font-bold text-neutral-100 text-xl mb-4 flex items-center justify-start"><span class="fas fa-gifts mr-4 w-8 flex items-center justify-center"></span>Ивенты</h1>
+                    <p class="font-medium text-neutral-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse similique consequatur, laboriosam hic repellat architecto doloremque numquam distinctio, accusamus pariatur laborum ea sed non rerum necessitatibus sequi, voluptates temporibus at.</p>
+                </div>
+            </div>
+            <div class="bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 p-8 flex items-center justify-center rounded-3xl cursor-pointer hover:transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="w-11/12">
+                    <h1 class="font-bold text-xl mb-4 flex items-center justify-start"><span class="fas fa-mug-hot mr-4 flex items-center justify-center"></span>Комфорт</h1>
+                    <p class="font-medium text-neutral-400 dark:text-neutral-300 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur porro, enim possimus obcaecati magnam labore ipsum eaque iure aspernatur autem minima deleniti saepe sed quidem maxime exercitationem dolore, esse ex!</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="flex items-center justify-center mt-36">
-        <button onclick="window.location.href = '#about';" class="fas fa-arrow-down text-xl animate-float"></button>
-    </div>
-</div>
-<script src="./assets/js/copyIp.min.js"></script>
+    <script src="./assets/js/copyIp.min.js"></script>
+</body>

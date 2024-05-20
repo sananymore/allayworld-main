@@ -16,6 +16,12 @@ module.exports = {
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],
       },
+      colors: {
+        brand: {
+          1: '#3D7DE0',
+          2: '#B28CE1',
+        },
+      },
     },
   },
   plugins: [],
